@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailer</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: grey;
+        }
+        table {
+            border-spacing: 0;
+        }
+        td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+            padding-bottom: 60px;
+        }
+
+        .main {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #171a1b;
+        }
+        .two-columns {
+
+            text-align: center;
+            font-size: 0;
+        }
+
+        /* below is descendent css i.e it targets class column of two-columns only */
+        .two-columns .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .three-columns {
+            text-align: center;
+            font-size: 0;
+            padding: 15px 0 25px;
+        }
+
+        .three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .three-columns .padding {
+            padding: 15px;
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            padding: 0 5px;
+        }
+
+        .two-columns.last {
+            padding:15px 0;
+        }
+
+        .two-columns .padding {
+            padding: 20px;
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
+
+        }
+
+        .button-dark {
+            background-color: #171a1b;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+    </style>
+<!-- Below code from chatgpt -->
+<script>
+    function scrollToEnd() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+</head>
+
+<body>
+<center class="wrapper">
+    <table class="main" width="100%">
+        <tr>
+            <td height="10px" style="background-color: #26292b;">
+            </td>
+        </tr>
+
+        <!-- Logo Section - 2 columns used -->
+
+        <tr>
+            <td style="padding: 0px 0 4px">
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 0px 60px 0px;">
+                                            <a href="" onclick="scrollToEnd()"><img src= images/logo/logo_transparent.png alt="logo" width="200px" title="Logo"></a>;
+                                        </td>
+                                </tr>
+                                </table>
+                                <table class="column">
+                                    ><tr>
+                                        <td style= "padding: 10px 0px 10px 180px;">
+                                            <!-- <a href="" style="padding:5px;"><img src="images/facebook.avif" alt="facebook" width="30px"></a>;
+                                            <a href="" style="padding:5px;"><img src="images/twitt.avif" alt="twit" width="30px"></a>; -->
+                                            <a href="" style="padding:5px;" onclick="scrollToEnd()"><img src="images/whatsapp.avif" alt="whatsapp" width="30px"></a>;
+                                            <a href="" style="padding:5px;" onclick="scrollToEnd()"><img src="images/mail.avif" alt="mail" width="30px"></a>;
+                                        
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+
+                    </table>
+
+            </td>
+
+        </tr>
+
+<!-- Banner Section - 1 column-->
+        <tr>
+            <td>
+                <a href=""><img src="images/banner.jpg" alt="" width="600px" height="500px" style="max-width: 100%;"></a>
+
+            </td>
+        </tr>
+
+<!-- 3 Columns Section -->
+         <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="three-columns">
+
+                           <table class="column">
+                            <tr>
+                                <td class="padding">
+                                    <table class="content">
+                                        <tr>
+                                        <td>
+                                            <a href=""><img src="images/giftsncake_icon.png" alt="email" width="130px" style="max-width: 100px;"></a>
+                                        </td>
+                                        <tr>
+                                            <td>
+                                                <p style="font-weight:bold" font-size="17px">Personalised Gifts and Baked Delicacies</p>
+                                                <p>Indulge in the joy of personalized presents, meticulously crafted to bring a smile to your loved ones' faces. Pair that with a delectable assortment of homemade treats, lovingly baked to perfection.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                           </table>
+
+                           <table class="column">
+                            <tr>
+                                <td class="padding">
+                                    <table class="content">
+                                        <tr>
+                                        <td>
+                                            <a href=""><img src="images/decor_icon.png" alt="email" width="130px" style="max-width: 100px;"></a>
+                                        </td>
+                                        <tr>
+                                            <td>
+                                                <p style="font-weight:bold" font-size="17px">Home Decor and Accessories</p>
+                                                <p>Elevate your living space with our exquisite collection of home decor and accessories. From tastefully curated accents to stylish functional pieces, our selection offers a perfect blend of elegance and functionality.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                           </table>
+
+                           <table class="column">
+                            <tr>
+                                <td class="padding">
+                                    <table class="content">
+                                        <tr>
+                                        <td>
+                                            <a href=""><img src="images/toy_icon.png" alt="email" width="130px" style="max-width: 100px;"></a>
+                                        </td>
+                                        <tr>
+                                            <td>
+                                                <p style="font-weight:bold" font-size="17px">Quiet Books for Todlers</p>
+                                                <p>
+                                                    Ignite your toddler's imagination with our captivating quiet books. Handcrafted with love, these interactive fabric wonders are designed to engage and educate young minds through fun activities like buttoning, zipping, and matching.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                           </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+
+
+
+    <!-- 2 Column Section   -->
+
+    <tr>
+        <td style="background-color: #26292b; color:#ffffff;">
+            <table width="100%">
+                <tr>
+                    <td class="two-columns last">
+
+                        <table class="column">
+                            <tr>
+                                <td class="padding">
+
+                                    <table class="content">
+                                        <tr>
+                                            <td>
+                                                <a href=""><img src="images/bakedgoodies.png" alt="" height="260" width="320px" style="max-width:260px"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="column">
+                            <tr>
+                                <td class="padding">
+
+                                    <table class="content">
+                                        <tr>
+                                            <td>
+                                                <p style="font-weight: bold; font-size:18px">Custom-Baked Goodies <span style="font-weight: lighter; font-size:16px"><br>Made to Order</span></p>
+
+                                                <p>A way of showing thoughtfulness, love and affection.There is no one who won't appreciate an adorable freshly Baked treat. Experience the delight of freshly baked goodies, crafted with passion and care.</p>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+    <!-- 1 Column Section -->
+    <tr>
+        <td style="padding: 15px 0 5px;">
+            <table width="100%">
+                <tr>
+                    <td style="text-align: center; padding: 15px;">
+                        <p style="font-size: 20px; font-weight: bold;">Captivating Quiet Books for Curious Toddlers</p>
+                        <p style="line-height: 23px; font-size: 15px; padding: 5px 0 15px;"> Our Enchanting Quiet Books for Toddlers are a Gateway to Discovery and Creativity. Designed with vibrant colors, interactive activities, and soft textures, these handmade fabric wonders engage little ones in peaceful play, fostering fine motor skills and cognitive development while sparking their love for learning. <br><a href="http://www.youtube.com" target="_blank">Click for Demo Videos</a></p>
+                        <a href=""><img src="images/kidsbooks.png" alt="" height="260" width="460px"></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+
+    <!-- footer section -->
+
+    <tr>
+        <td style="background-color: #26292b;">
+            <table width="100%">
+
+                <tr>
+                    <td style="text-align: center; padding: 45px 20px; color:#ffffff">
+                        <a href=""><img src="images/logo_transparent.png" alt="" width="350px"></a>
+                        <p style="padding:10px">Email : sarita_simenti@yahoo.com</p>
+                        <p style="padding:10px">whatsApp No.: 7208280813</p>
+
+                        <!-- <a href=""><img src="images/facebook.avif" alt="facebook" width="30px" style="padding:0 2px"></a>
+                        <a href=""><img src="images/twitt.avif" alt="twit" width="30px" style="padding:0 2px"> </a>
+                        <a href=""><img src="images/whatsapp.avif" alt="whatsapp" width="30px" style="padding:0 2px"></a>
+                        <a href=""><img src="images/mail.avif" alt="mail" width="30px" style="padding:0 2px"></a> -->
+                        
+                        <p style="padding: 10px ;">Contact us for more details</p>
+
+
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </td>
+    </tr>
+
+
+
+
+
+
+
+
+    </table>
+</center>
+
+<!-- Below code is from chatgpt -->
+<script>
+    // Automatically scroll to the end when the page loads
+    window.onload = function() {
+        scrollToEnd();
+    };
+</script>
+
+</body>
+</html>
